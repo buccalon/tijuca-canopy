@@ -1,10 +1,14 @@
 [
   {
     "path": "/about",
-    "text": "About"
+    "text": "Sobre"
   },
   {
-    "path": "/about/example",
-    "text": "Markdown Example"
+    "path": "/about/timeline",
+    "text": "Linha do Tempo"
+  },
+  {
+    "path": "/about/narrative",
+    "text": "Narrativa"
   }
 ]

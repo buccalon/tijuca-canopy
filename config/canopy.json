@@ -6,20 +6,18 @@
     "https://iiif.tiju.ca/bnbr_sophia_60996/manifest.json"
   ],
   "metadata": ["Creator", "Date"],
-  "label": { "none": ["Tijuca Floresta Arquivo"] },
+  "label": {
+    "pt": ["tiju.ca"],
+    "en": ["tiju.ca"] },
   "summary": {
-    "none": ["Conheça a história do Parque Nacional da Tijuca."]
+    "pt": ["Conheça a história do Parque Nacional da Tijuca"],
+    "en": ["Learn about the Tijuca National Park's history"]
   },
   "locales": [
     {
       "config": "locales/pt.json",
       "label": "Português",
       "lang": "pt"
-    },
-    {
-      "config": "locales/en.json",
-      "label": "English",
-      "lang": "en"
     }
   ]
 }
