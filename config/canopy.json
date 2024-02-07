@@ -2,7 +2,7 @@
   "collection": "https://iiif.tiju.ca/index.json",
   "devCollection": "https://iiif.tiju.ca/index.json",
   "featured": [
-    "https://iiif.tiju.ca/tjrj_02_267_597_8/manifest.json",
+    "https://iiif.tiju.ca/0071824cx017a-06/manifest.json",
     "https://iiif.tiju.ca/bnbr_sophia_60996/manifest.json"
   ],
   "metadata": ["Type", "Creator", "Date"],
