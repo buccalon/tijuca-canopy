@@ -1,5 +1,7 @@
 // const { createThumbnailHelper } = require("@iiif/vault-helpers");
 
+const axios = require("axios");
+
 const getService = async (service, preferredWidth = 1200) => {
   try {
     const response = await axios.get(`${service["id"]}/info.json`);
