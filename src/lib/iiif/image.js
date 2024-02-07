@@ -1,4 +1,4 @@
-const { createThumbnailHelper } = require("@iiif/vault-helpers");
+// const { createThumbnailHelper } = require("@iiif/vault-helpers");
 
 const getService = async (service, preferredWidth = 1200) => {
   try {
