@@ -2,13 +2,5 @@
   {
     "path": "/about",
     "text": "Sobre"
-  },
-  {
-    "path": "/about/timeline",
-    "text": "Linha do Tempo"
-  },
-  {
-    "path": "/about/narrative",
-    "text": "Narrativa"
   }
 ]
