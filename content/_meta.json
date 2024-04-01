@@ -1,5 +1,9 @@
 [
   {
+    "path": "/about",
+    "text": "Sobre"
+  },
+  {
     "path": "/works",
     "text": "Arquivo"
   },
@@ -8,7 +12,7 @@
     "text": "Trilhas"
   },
   {
-    "path": "/about",
-    "text": "Sobre"
+    "path": "/map",
+    "text": "Mapa"
   }
 ]
