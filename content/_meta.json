@@ -12,6 +12,10 @@
     "text": "Trilhas"
   },
   {
+    "path": "/trails/timeline",
+    "text": "Cronologia"
+  },
+  {
     "path": "/map",
     "text": "Mapa"
   }

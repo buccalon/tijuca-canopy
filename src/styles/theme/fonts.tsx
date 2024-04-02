@@ -1,5 +1,5 @@
-export const dm_sans = "DM Sans, sans-serif";
-export const dm_serif_display = "DM Serif Display, serif";
+export const dm_sans = "Montserrat, sans-serif";
+export const dm_serif_display = "Noto Serif, serif";
 
 export const GoogleFontImport = () => (
   <>
@@ -10,7 +10,7 @@ export const GoogleFontImport = () => (
       crossOrigin="anonymous"
     />
     <link
-      href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,300;9..40,400;9..40,500;9..40,700&family=DM+Serif+Display&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Noto+Serif:ital,wght@0,100..900;1,100..900&display=swap"
       rel="stylesheet"
     ></link>
   </>

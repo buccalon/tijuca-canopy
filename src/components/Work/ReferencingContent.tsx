@@ -14,7 +14,7 @@ const ReferencingContent = ({
         as="h2"
         css={{ margin: "0 0 0.618rem !important", fontSize: "1rem !important" }}
       >
-        Content Referencing This Work
+        Veja também:
       </Heading>
       <Nav items={referencingContent} orientation="vertical" />
     </StyledReferencingContent>
