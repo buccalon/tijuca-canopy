@@ -2,8 +2,8 @@ import { Actions, ResponsiveActions } from "./Header.styled";
 import { Content, Wrapper } from "@components/Header/Header.styled";
 import React, { useEffect, useState } from "react";
 
-
 import { HamburgerMenuIcon } from "@radix-ui/react-icons";
+import Image from 'next/image'
 import Link from "next/link";
 import Locale from "@components/Shared/Locale/Locale";
 import Nav from "@components/Nav/Nav";
@@ -12,8 +12,6 @@ import collections from "@.canopy/collections.json";
 import { useCanopyState } from "@context/canopy";
 import useNavigation from "@src/hooks/useNavigation";
 import { useRouter } from "next/router";
-import Image from 'next/image'
-
 
 const Header = () => {
   const [showNav, setShowNav] = useState(false);
@@ -33,7 +31,7 @@ const Header = () => {
   return (
     <Wrapper isVisible={headerVisible || pathname !== "/search" ? true : false}>
       <Content>
-          <Link href="/">
+      <Link href="/">
             <Image src="/images/tijuca.svg" alt={collections[0].label} width={222} height={54} />
           </Link>
         <ResponsiveActions>

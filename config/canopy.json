@@ -15,6 +15,13 @@
     "pt": ["Conheça a história do Parque Nacional da Tijuca"],
     "en": ["Learn about the Tijuca National Park's history"]
   },
+  "theme": {
+    "defaultTheme": "light",
+    "accentColor": "grass",
+    "grayColor": "slate",
+    "radius": "none",
+    "scaling": "100%"
+  },
   "locales": [
     {
       "config": "locales/pt.json",

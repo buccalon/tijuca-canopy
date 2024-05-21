@@ -1,50 +1,41 @@
 import { type NavigationItem } from "@src/customTypes/navigation";
 import Nav from "@components/Nav/Nav";
-import Heading from "@components/Shared/Heading/Heading";
 import { styled } from "@styles/stitches";
 
-const ReferencingContent = ({
+const WorkReferencingContent = ({
   referencingContent,
 }: {
   referencingContent: NavigationItem[];
 }) => {
   return (
     <StyledReferencingContent>
-      <Heading
-        as="h2"
-        css={{ margin: "0 0 0.618rem !important", fontSize: "1rem !important" }}
-      >
-        Veja também:
-      </Heading>
       <Nav items={referencingContent} orientation="vertical" />
     </StyledReferencingContent>
   );
 };
 
-export default ReferencingContent;
+export default WorkReferencingContent;
 
 const StyledReferencingContent = styled("div", {
-  border: "1px solid var(--colors-slate4)",
-  borderRadius: "0.382rem",
-  padding: "$gr3 $gr4 $gr2",
-  margin: "-$gr1 0 $gr4",
-  boxShadow: "5px 5px 11px #0001",
+  padding: "$gr3 0",
 
   a: {
-    color: "$indigo10 !important",
+    color: "var(--accent-11) !important",
     padding: "$gr1 0 $gr2",
     marginBottom: "0",
     textDecoration: "underline",
     marginLeft: "1.618rem",
 
+    // bullet point
     "&::before": {
-      content: "↳",
+      content: "",
+      width: "5px",
+      height: "5px",
+      borderRadius: "50%",
+      backgroundColor: "var(--gray-6)",
       position: "absolute",
-      width: "1.618rem",
-      fontSize: "0.9rem",
-      left: "-1.382rem",
-      marginTop: "2px",
-      opacity: "0.382",
+      left: "-1rem",
+      top: "18px",
     },
   },
 });

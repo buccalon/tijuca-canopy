@@ -1,7 +1,7 @@
 import { styled } from "@styles/stitches";
 
 const MapStyled = styled("div", {
-  height: "80vh",
+  height: "100vh",
   position: "relative",
   zIndex: "0",
 
@@ -17,8 +17,8 @@ const MapStyled = styled("div", {
 
   figure: {
     img: {
-      width: "200px",
-      maxHeight: "150px",
+      width: "100%",
+      maxHeight: "200px",
     },
     video: {
       display: "none",

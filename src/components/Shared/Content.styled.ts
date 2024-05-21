@@ -28,13 +28,13 @@ const AsideStyled = styled("aside", {
     width: "100%",
     marginTop: "0",
     paddingBottom: "$gr2",
-    borderBottom: "1px solid $slate6",
+    borderBottom: "1px solid var(--gray-4)",
   },
 });
 
 const ContentStyled = styled("div", {
   flexShrink: 1,
-  width: "100%",
+  width: "calc(100% - 275px)",
 
   "@xs": {
     width: "100%",
@@ -44,7 +44,7 @@ const ContentStyled = styled("div", {
 const ContentWrapper = styled("div", {
   position: "relative",
   width: "100%",
-  padding: "$gr4 0",
+  padding: "$gr3 0",
   display: "flex",
 
   variants: {

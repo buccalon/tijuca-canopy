@@ -2,13 +2,14 @@ import { CanopyEnvironment } from "@customTypes/canopy";
 import CanopyMDXRemote from "@src/components/MDX";
 import Container from "@components/Shared/Container";
 import FACETS from "@.canopy/facets.json";
+import Heading from "@src/components/Shared/Heading/Heading";
 import Hero from "@components/Hero/Hero";
 import { HeroWrapper } from "../components/Hero/Hero.styled";
-import Layout from "@components/layout";
-import { LocaleString } from "@hooks/useLocale";
+import LayoutsBasic from "@src/components/Layouts/Basic";
 import { MDXRemoteSource } from "@customTypes/content";
 import React from "react";
 import Related from "../components/Related/Related";
+import { Section } from "@radix-ui/themes";
 import { canopyManifests } from "@lib/constants/canopy";
 import { createCollection } from "../lib/iiif/constructors/collection";
 import { getMarkdownContent } from "@src/lib/contentHelpers";
@@ -30,24 +31,26 @@ const Index: React.FC<IndexProps> = ({
   source,
 }) => {
   return (
-    <Layout>
-      {frontMatter.showHero && (
-        <HeroWrapper>
-          <Hero collection={featuredItems} />
-        </HeroWrapper>
-      )}
-      <Container>
-        <div>
-          <CanopyMDXRemote {...source} />
-        </div>
-        {frontMatter.showHighlighted && (
-          <Related
-            collections={metadataCollections}
-            title={LocaleString("homepageHighlightedWorks")}
-          />
+    <LayoutsBasic frontMatter={frontMatter}>
+      <>
+        {frontMatter.showHero && (
+          <HeroWrapper>
+            <Hero collection={featuredItems} />
+          </HeroWrapper>
         )}
-      </Container>
-    </Layout>
+        <Container>
+          <Section size="2">
+            <CanopyMDXRemote source={source} />
+          </Section>
+          {frontMatter.showHighlighted && (
+            <>
+              <Heading as="h2">Highlighted Items</Heading>
+              <Related collections={metadataCollections} />
+            </>
+          )}
+        </Container>
+      </>
+    </LayoutsBasic>
   );
 };
 

@@ -3,6 +3,12 @@ import { styled } from "@styles/stitches";
 const SliderStyled = styled("div", {
   marginBottom: "$gr5",
 
+  button: {
+    svg: {
+      filter: "unset",
+    },
+  },
+
   "@xs": {
     "& > div > div": {
       alignItems: "center",
@@ -17,20 +23,21 @@ const SliderStyled = styled("div", {
   },
 
   [`& .clover-slider-header-label`]: {
-    fontSize: "$gr6",
+    fontSize: "$gr4 !important",
     fontFamily: "$sans",
-    fontWeight: "300 !important",
     letterSpacing: "-0.01em",
+  },
+
+  [`& a.clover-slider-header-homepage`]: {
+    color: "var(--accent-11)",
+    textDecoration: "none",
   },
 
   [`& .clover-slider-header-summary`]: {
     display: "block",
-    fontSize: "$gr3 !important",
-    color: "$slate11 ",
-  },
-
-  [`& .clover-slider-header-view-all`]: {
-    color: "$slate1",
+    fontSize: "$gr2 !important",
+    fontWeight: "500 !important",
+    color: "var(--gray-11)",
   },
 
   ".swiper-slide": {
@@ -46,7 +53,7 @@ const SliderStyled = styled("div", {
     "> div": {
       borderRadius: "3px",
       overflow: "hidden",
-      boxShadow: "2px 2px 5px #0001",
+      boxShadow: "var(--shadow-3)",
     },
   },
 
@@ -61,18 +68,19 @@ const SliderStyled = styled("div", {
       overflow: "hidden",
       whiteSpace: "normal",
       fontWeight: "400",
-      fontSize: "$gr4",
+      fontSize: "$gr3",
+      lineHeight: "1.38em",
       fontFamily: "$sans",
       textDecoration: "none !important",
     },
   },
 
   [`& a figcaption, & a:visited figcaption`]: {
-    color: "$slate12",
+    color: "var(--gray-12)",
   },
 
   [`& a:hover figcaption, & a:focus figcaption`]: {
-    color: "$indigo11",
+    color: "var(--accent-11)",
   },
 });
 
