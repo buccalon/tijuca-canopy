@@ -17,7 +17,7 @@
   },
   "theme": {
     "defaultTheme": "light",
-    "accentColor": "grass",
+    "accentColor": "green",
     "grayColor": "slate",
     "radius": "none",
     "scaling": "100%"
