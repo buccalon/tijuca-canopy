@@ -3,9 +3,9 @@
   "devCollection": "https://iiif.tiju.ca/index.json",
   "featured": [
     "https://iiif.tiju.ca/ccnft1966/manifest.json",
+    "https://iiif.tiju.ca/tfa-bam-002/manifest.json",
     "https://iiif.tiju.ca/0071824cx017a-06/manifest.json",
-    "https://iiif.tiju.ca/p01988071/manifest.json",
-    "https://iiif.tiju.ca/bnbr_sophia_60996/manifest.json"
+    "https://iiif.tiju.ca/ny00459516/manifest.json"
   ],
   "metadata": ["Tipo", "Autoria", "Data", "Provedor"],
   "label": {
