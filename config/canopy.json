@@ -7,7 +7,7 @@
     "https://iiif.tiju.ca/0071824cx017a-06/manifest.json",
     "https://iiif.tiju.ca/ny00459516/manifest.json"
   ],
-  "metadata": ["Tipo", "Autoria", "Data", "Provedor"],
+  "metadata": ["Tipo", "Autoria", "Data", "Localidade", "Provedor"],
   "label": {
     "pt": ["tiju.ca"],
     "en": ["tiju.ca"] },
